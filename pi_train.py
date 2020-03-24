@@ -3,10 +3,10 @@ from time import sleep      # import the sleep (wait) command from the time libr
 
 sensor = mpu6050(0x68)
 
-# Accelerometer measures orientation, by measuring acceleration due to gravity
-# toward the earth, and any acceleration of the sensor in any direction
+# Accelerometer measures orientation, by measuring acceleration due to gravity toward
+# the earth, and any acceleration of the sensor along the X, Y, and Z axis
 #
-# Gyroscope measures rotational movement
+# Gyroscope measures rotational movement around the X, Y, or Z axes
 
 while True:                                         # loop continuously
     accelerometer_data = sensor.get_accel_data()    # read the sensor for accel data
